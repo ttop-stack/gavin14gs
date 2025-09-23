@@ -6,21 +6,33 @@ Gavin14gs Website Overview
 Tech Stack:
 
 React (modular UI components)
+
 Vite (fast build tool and dev server)
+
 Cloudflare Pages (static site hosting)
+
 Discord Webhook (contact form integration)
+
 Minimalist CSS (inline styles, black theme)
+
 JSON data files (for clothing items)
+
 Structure:
 
 components — Reusable UI components (Header, Footer, ClothingList, ContactForm, etc.)
+
 pages — Main pages (Home, Sell, Archive, Contact)
+
 data — JSON files for clothes for sale and archive
+
 public — Static assets (images, favicon)
+
 index.html — Main HTML entry point
+
 vite.config.js — Vite configuration
 
 How to Edit or Extend
+
 Clone the repository:
 git clone https://github.com/ttop-stack/gavin14gs.git
 cd gavin14gs
@@ -33,14 +45,21 @@ Visit http://localhost:5173 in your browser.
 Edit content
 
 Pages: Modify files in pages (e.g., Home.jsx, Sell.jsx)
+
 Components: Update or add new UI in components
+
 Clothing Data: Edit clothesForSale.json and clothesArchive.json
+
 Images: Add images to images
+
 Contact Form: Update Discord webhook or form logic in ContactForm.jsx
+
 Change styles/theme:
+
 Edit inline styles in components or add a CSS file for global styles.
 
 Build for production:
+
 npm run build
 Deploy the dist folder to Cloudflare Pages.
 
