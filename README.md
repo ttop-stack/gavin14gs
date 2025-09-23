@@ -35,11 +35,18 @@ How to Edit or Extend
 
 Clone the repository:
 git clone https://github.com/ttop-stack/gavin14gs.git
+
 cd gavin14gs
+
+
 Install dependencies:
+
 npm install
+
 Run locally:
+
 npm run dev
+
 Visit http://localhost:5173 in your browser.
 
 Edit content
