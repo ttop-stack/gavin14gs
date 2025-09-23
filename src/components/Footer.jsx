@@ -10,7 +10,7 @@ export default function Footer() {
       marginTop: 48,
       fontSize: "0.95em"
     }}>
-      &copy; {new Date().getFullYear()} Minimalist Black Clothing. All rights reserved.
+      &copy; {new Date().getFullYear()} Gavin14gs. All rights reserved.
     </footer>
   );
 }

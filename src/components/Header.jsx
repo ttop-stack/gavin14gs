@@ -9,7 +9,7 @@ export default function Header() {
       textAlign: "center",
       borderBottom: "1px solid #222"
     }}>
-      <h1 style={{ fontWeight: 700, fontSize: "2.2em", letterSpacing: "2px" }}>Minimalist Black Clothing</h1>
+      <h1 style={{ fontWeight: 700, fontSize: "2.2em", letterSpacing: "2px" }}>Gavin14gs</h1>
       <nav style={{ marginTop: 12 }}>
         <a href="/" style={{ color: "#fff", margin: "0 16px", textDecoration: "none" }}>Home</a>
         <a href="/sell" style={{ color: "#fff", margin: "0 16px", textDecoration: "none" }}>Sell</a>
