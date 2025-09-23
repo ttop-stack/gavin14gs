@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import ClothingList from "../components/ClothingList";
+import ClothingList from "../components/ClothingList.jsx";
 import ContactForm from "../components/ContactForm";
 
 export default function Home() {
