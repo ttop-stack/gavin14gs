@@ -1,0 +1,16 @@
+[
+  {
+    "id": "3",
+    "name": "Classic Black Jeans",
+    "image": "/images/black-jeans.jpg",
+    "description": "Timeless black jeans, no longer for sale.",
+    "isForSale": false
+  },
+  {
+    "id": "4",
+    "name": "Vintage Black Jacket",
+    "image": "/images/black-jacket.jpg",
+    "description": "Vintage style, minimalist black jacket.",
+    "isForSale": false
+  }
+]

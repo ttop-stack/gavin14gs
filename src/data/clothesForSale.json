@@ -1,0 +1,18 @@
+[
+  {
+    "id": "1",
+    "name": "Minimalist Black T-Shirt",
+    "image": "/images/black-tshirt.jpg",
+    "price": 25,
+    "description": "A sleek, minimalist black t-shirt for any occasion.",
+    "isForSale": true
+  },
+  {
+    "id": "2",
+    "name": "Modern Black Hoodie",
+    "image": "/images/black-hoodie.jpg",
+    "price": 45,
+    "description": "Comfortable and stylish black hoodie.",
+    "isForSale": true
+  }
+]
