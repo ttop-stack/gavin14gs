@@ -148,37 +148,59 @@ export default function ClothingItem({ item, showPrice }) {
             justifyContent: "center",
             alignItems: "center",
             zIndex: 1000,
-            cursor: "pointer"
+            cursor: "pointer",
+            padding: "20px",
+            boxSizing: "border-box"
           }}
           onClick={closeImageModal}
         >
-          <div style={{ position: "relative", maxWidth: "90%", maxHeight: "90%" }}>
+          <div style={{ 
+            position: "relative", 
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            maxWidth: "90vw",
+            maxHeight: "90vh"
+          }}>
             <img 
               src={selectedImage} 
               alt={item.name}
               style={{ 
+                width: "auto",
+                height: "auto",
                 maxWidth: "100%", 
-                maxHeight: "100%", 
+                maxHeight: "calc(90vh - 80px)", // Leave space for thumbnails
+                objectFit: "contain", // This ensures the full image is visible
                 borderRadius: "8px",
-                boxShadow: "0 4px 20px rgba(0,0,0,0.5)"
+                boxShadow: "0 4px 20px rgba(0,0,0,0.5)",
+                cursor: "default" // Remove pointer cursor from image
               }}
+              onClick={(e) => e.stopPropagation()} // Prevent closing when clicking image
             />
+            
             <button
               style={{
                 position: "absolute",
-                top: "10px",
-                right: "10px",
+                top: "-10px",
+                right: "-10px",
                 background: "#fff",
                 color: "#000",
                 border: "none",
                 borderRadius: "50%",
-                width: "30px",
-                height: "30px",
+                width: "35px",
+                height: "35px",
                 cursor: "pointer",
-                fontSize: "18px",
-                fontWeight: "bold"
+                fontSize: "20px",
+                fontWeight: "bold",
+                boxShadow: "0 2px 8px rgba(0,0,0,0.3)",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center"
               }}
-              onClick={closeImageModal}
+              onClick={(e) => {
+                e.stopPropagation();
+                closeImageModal();
+              }}
             >
               ×
             </button>
@@ -186,12 +208,12 @@ export default function ClothingItem({ item, showPrice }) {
             {/* Image navigation if multiple images */}
             {allImages.length > 1 && (
               <div style={{
-                position: "absolute",
-                bottom: "10px",
-                left: "50%",
-                transform: "translateX(-50%)",
                 display: "flex",
-                gap: "8px"
+                gap: "8px",
+                marginTop: "15px",
+                maxWidth: "100%",
+                overflowX: "auto",
+                padding: "5px"
               }}>
                 {allImages.map((img, idx) => (
                   <img
@@ -199,17 +221,25 @@ export default function ClothingItem({ item, showPrice }) {
                     src={img}
                     alt={`${item.name} ${idx + 1}`}
                     style={{
-                      width: "50px",
-                      height: "50px",
+                      width: "60px",
+                      height: "60px",
                       objectFit: "cover",
-                      borderRadius: "4px",
+                      borderRadius: "6px",
                       cursor: "pointer",
-                      border: img === selectedImage ? "2px solid #fff" : "2px solid transparent",
-                      opacity: img === selectedImage ? 1 : 0.7
+                      border: img === selectedImage ? "3px solid #fff" : "3px solid transparent",
+                      opacity: img === selectedImage ? 1 : 0.7,
+                      transition: "opacity 0.2s, border 0.2s",
+                      flexShrink: 0
                     }}
                     onClick={(e) => {
                       e.stopPropagation();
                       setSelectedImage(img);
+                    }}
+                    onMouseEnter={(e) => {
+                      if (img !== selectedImage) e.target.style.opacity = "1";
+                    }}
+                    onMouseLeave={(e) => {
+                      if (img !== selectedImage) e.target.style.opacity = "0.7";
                     }}
                   />
                 ))}
