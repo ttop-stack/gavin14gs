@@ -2,14 +2,13 @@ import React, { useEffect, useState } from "react";
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
 import ClothingList from "../components/ClothingList.jsx";
+import clothesForSaleData from "../data/clothesForSale.json";
 
 export default function Sell() {
   const [forSale, setForSale] = useState([]);
 
   useEffect(() => {
-    fetch("/src/data/clothesForSale.json")
-      .then(res => res.json())
-      .then(setForSale);
+    setForSale(clothesForSaleData);
   }, []);
 
   return (

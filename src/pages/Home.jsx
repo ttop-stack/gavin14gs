@@ -3,18 +3,16 @@ import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
 import ClothingList from "../components/ClothingList.jsx";
 import ContactForm from "../components/ContactForm.jsx";
+import clothesForSaleData from "../data/clothesForSale.json";
+import clothesArchiveData from "../data/clothesArchive.json";
 
 export default function Home() {
   const [forSale, setForSale] = useState([]);
   const [archive, setArchive] = useState([]);
 
   useEffect(() => {
-    fetch("/src/data/clothesForSale.json")
-      .then(res => res.json())
-      .then(setForSale);
-    fetch("/src/data/clothesArchive.json")
-      .then(res => res.json())
-      .then(setArchive);
+    setForSale(clothesForSaleData);
+    setArchive(clothesArchiveData);
   }, []);
 
   return (

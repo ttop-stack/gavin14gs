@@ -2,14 +2,13 @@ import React, { useEffect, useState } from "react";
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
 import ClothingList from "../components/ClothingList.jsx";
+import clothesArchiveData from "../data/clothesArchive.json";
 
 export default function Archive() {
   const [archive, setArchive] = useState([]);
 
   useEffect(() => {
-    fetch("/src/data/clothesArchive.json")
-      .then(res => res.json())
-      .then(setArchive);
+    setArchive(clothesArchiveData);
   }, []);
 
   return (
