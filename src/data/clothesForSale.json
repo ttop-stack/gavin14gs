@@ -14,5 +14,23 @@
     "price": 45,
     "description": "Comfortable and stylish black hoodie.",
     "isForSale": true
+  },
+  {
+    "id": "3",
+    "name": "Raf Simons x Fred Perry SS 2014 Checkered Print Polo",
+    "image": "/images/fredperry1jpg.jpg",
+    "additionalImages": ["/images/fredperry2.jpg", "/images/fredperry3.jpg"],
+    "price": 90,
+    "description": "High quality print, material and a great fit. I've been personally searching for this for 4/5 years and am not in a rush to sell. I'd say this iteration is decently rare and not always on the market. Condition is good, print is great and the shirt is still soft and feels fresh. No flaws or marks, however there is somewhat noticeable yellowing on the color. I am currently working on removing this and will update the listing when I do. Otherwise perfect. Tagged a size 40/Small, fits s/m. Chest - 16.5in, Shoulders - 17.5in, Length - 27in, Hem - 18.5in, Sleeve - 6.5in. Please ask any questions and send offers!",
+    "size": "40/Small (fits S/M)",
+    "measurements": {
+      "chest": "16.5in",
+      "shoulders": "17.5in", 
+      "length": "27in",
+      "hem": "18.5in",
+      "sleeve": "6.5in"
+    },
+    "condition": "Good - slight yellowing on collar being addressed",
+    "isForSale": true
   }
 ]
