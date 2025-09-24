@@ -2,6 +2,8 @@
 
 Website created for my friend for him to sell and display clothes. If you would like to view it, view it on https://gavin14gs.pages.dev/
 
+basically if you want to sell clothes and tired of depop and can use your brain for 30 minutes, you can fork this and create a brand new website to sell your products on
+
 Gavin14gs Website Overview
 Tech Stack:
 
