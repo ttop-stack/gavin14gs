@@ -124,6 +124,34 @@ export default function ClothingItem({ item, showPrice }) {
           </div>
         )}
 
+        {/* PayPal Buy Now Button */}
+        {item.paypalLink && (
+          <div style={{ marginTop: "12px", textAlign: "center" }}>
+            <a 
+              href={item.paypalLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: "inline-block",
+                background: "#0070ba",
+                color: "#fff",
+                padding: "10px 20px",
+                borderRadius: "6px",
+                textDecoration: "none",
+                fontWeight: "bold",
+                fontSize: "0.9em",
+                transition: "background 0.2s",
+                cursor: "pointer"
+              }}
+              onMouseEnter={(e) => e.target.style.background = "#005ea6"}
+              onMouseLeave={(e) => e.target.style.background = "#0070ba"}
+              onClick={(e) => e.stopPropagation()}
+            >
+              Buy Now with PayPal
+            </a>
+          </div>
+        )}
+
         <div style={{ 
           fontSize: "0.8em", 
           color: "#888", 
