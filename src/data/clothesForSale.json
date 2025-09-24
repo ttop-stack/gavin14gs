@@ -52,5 +52,26 @@
     "material": "Wool (stretchy)",
     "season": "AW2008",
     "isForSale": true
+  },
+  {
+    "id": "5",
+    "name": "2012 Alexander McQueen Black Bondage Denim",
+    "image": "/images/alexandermcqueen.jpg",
+    "additionalImages": ["/images/alexandermcqueen2.jpg", "/images/alexandermcqueen3.jpg", "/images/alexandermcqueen4.jpg"],
+    "price": 130,
+    "description": "Straight fit, high quality construction and soft denim. Though a posthumous release, I still feel the design is very McQueen because of the classic bondage strap design. Somewhat worn, no real flaws - some paint chipping on the buckle, waist closure and rivets. As well as slight fading and whispering on hem. I think the fading adds to the look personally.",
+    "size": "46 (30\" waist)",
+    "measurements": {
+      "waist": "15.5in",
+      "inseam": "34in",
+      "rise": "9.5in",
+      "thigh": "10in",
+      "hem": "7in"
+    },
+    "condition": "Good - some paint chipping on hardware, slight fading on hem (adds character)",
+    "material": "Denim",
+    "season": "2012",
+    "fit": "Straight",
+    "isForSale": true
   }
 ]
