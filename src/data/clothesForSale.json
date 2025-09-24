@@ -32,5 +32,25 @@
     },
     "condition": "Good - slight yellowing on collar being addressed",
     "isForSale": true
+  },
+  {
+    "id": "4",
+    "name": "AW2008 Grey Undercoverism 1 Pocket Sweater",
+    "image": "/images/P0.jpg",
+    "additionalImages": ["/images/P0 (1).jpg", "/images/P0 (2).jpg", "/images/P0 (3).jpg"],
+    "price": 285,
+    "description": "Super soft wool sweater with a little button closure chest pocket. Really nice fade between lighter and darker shades of grey. Almost no flaws, sweater still holds its shape, very small spot on right side of chest (pictured) I believe can be dry cleaned or washed out.",
+    "size": "2 (fits S/M)",
+    "measurements": {
+      "chest": "15in",
+      "shoulders": "16.5in",
+      "length": "25in",
+      "sleeve": "25in",
+      "hem": "16in"
+    },
+    "condition": "Excellent - very small spot on right chest (pictured), likely removable",
+    "material": "Wool (stretchy)",
+    "season": "AW2008",
+    "isForSale": true
   }
 ]
